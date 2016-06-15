@@ -1,28 +1,16 @@
-/**
-var fs = require("fs");
-var buf = new Buffer(fs.readFileSync(process.argv[2]));
-   
-var str = buf.toString();
-var len = str.split("\n").length;
-len -=1;
 
-console.log(len);
-
-*/
-
-
-var str = undefined;
-
+reading(callBacks());
+ 
  function reading(callBacks) {
      
  
-
+var len = 0;
 var fs = require("fs");
 var buf = new Buffer(fs.readFile(process.argv[2]));
+
    
-str = buf.toString();
-var len = str.split("\n").length;
-len -=1;
+var str = buf.toString(); len = str.split("\n").length;
+ len -=1;
 
 
 }
@@ -32,7 +20,6 @@ function callBacks(len){
     
 }
 
- reading(callBacks());
  
  
  
@@ -40,3 +27,6 @@ function callBacks(len){
 
 
  
+
+
+
