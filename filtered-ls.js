@@ -2,7 +2,6 @@
 
 var fs = require("fs");
 var arr = [];
-var ext = [];
 var x = "";
 arr = fs.readdir(process.argv[2], function(err, list){
     if(err){
