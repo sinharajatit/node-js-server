@@ -27,20 +27,7 @@ var arr = [];
           console.log("error!!");
       }
       else{
-             var chkext = list.filter(checkExt);
-             console.log(chkext.join("\n"));
-             }
-      
-            
-      
-      });
-     
-      
-  }
-  
-   var abc  = makeModular(process.argv[2], process.argv[3], xyz());
-    
-    function checkExt(value){
+             var chkext = list.filter(function checkExt(value){
        var path = require("path");
         var str1 = "";
         var str2 = "";
@@ -53,7 +40,17 @@ var arr = [];
                return false;
            }
                  
+             });
+             console.log(chkext.join("\n"));
              }
+       });
+     
+      
+  }
+  
+   var abc  = makeModular(process.argv[2], process.argv[3], xyz());
+    
+   
  
   module.exports = abc;
       
