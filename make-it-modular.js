@@ -4,11 +4,9 @@
             2. Filtering function
 */
 
-
- var fs = require("fs");
+  var fs = require("fs");
 var arr = [];
-//var x = "";
-var chkext = [];
+
 
 
   function makeModular(path_dir, path_name, callBacks){
@@ -29,30 +27,9 @@ var chkext = [];
           console.log("error!!");
       }
       else{
-          // console.log(list);
-           var x = list.length;
-            var z = process.argv[3];
-            //console.log(z);
-             
-            //console.log(str1);
-            
-            
-             //console.log(list);
-            
              var chkext = list.filter(checkExt);
-             
              console.log(chkext.join("\n"));
-             
-             
-             
-            
-            
-            
-              
-               
-               
-               
-            }
+             }
       
             
       
@@ -77,47 +54,6 @@ var chkext = [];
            }
                  
              }
-      
-      
-      
-      
-
-  
-/*  {
-arr = fs.readdir(process.argv[2], function(err, list){
-    if(err){
-        console.log("error");
-    }
-       
-       
-      for(var i =0; i<list.length; i++){
-           x = "."+process.argv[3];
-           if(x==require("path").extname(list[i])){
-               arr = list[i];
-               console.log(arr);
-               
-            }
-            
-          
-      }
-         
-      });
- };
- 
- */
  
   module.exports = abc;
       
-
-
-      
-  
-    
-
-     
-     
-      
- 
-  
-     
-
