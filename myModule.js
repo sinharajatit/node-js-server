@@ -52,9 +52,7 @@ var x = [];
              if(error){
                  
                  return callBack(error);
-                
-                 
-             } 
+                } 
              else
              {
                   var chkext = list.filter(function checkExt(value){
@@ -73,9 +71,7 @@ var x = [];
             else{
                  
                    return false;
-                   
-                   
-           }
+             }
                  
              });
              
