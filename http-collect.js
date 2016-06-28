@@ -6,6 +6,9 @@ hyperquest(url).pipe(bl(function (err, data) {
     if(err){
         console.log("erroe hai");
     }
-    console.log(data.length);
-  console.log(data.toString());
+    if(res.on(end, function(end){
+        console.log(data.length);
+        console.log(data.toString());
+    });
+    
 }));
